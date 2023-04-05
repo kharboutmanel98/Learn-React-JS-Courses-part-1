@@ -70,3 +70,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # gerer les components #integrer le bootswatch #crier state and prop #validation props #gerer les routes #utiliser des differentes hooks 
 # learn-React-part2
+# learn-React-part2
