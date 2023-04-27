@@ -2,44 +2,37 @@ import Counter from "./Counter";
 import Product from "./Product";
 
 import { v4 as uuid } from "uuid";
-import { useState , useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { ProductContext } from "../Contexts/ProductContext";
 
-
 function Products() {
+  const title = useRef();
+  const price = useRef();
 
-const {products , addProduct } = useContext(ProductContext)
+  const { products, addProduct } = useContext(ProductContext);
 
-
-
-
-
-
-
-
-
-  const [title, setTitle] = useState("");
-  const [price, setPrice] = useState("");
+  // const [title, setTitle] = useState("");
+  // const [price, setPrice] = useState(0);
   const [message, setMessage] = useState("");
 
   let showList = true;
 
-
+  //! function to get the title from input
   const titleInput = (e) => {
     if (e.target.value === "") {
-      setMessage("this is Required !")
-    } else if (e.target.value.trim().length <3 ) {
+      setMessage("this is Required !");
+    } else if (e.target.value.trim().length < 3) {
       setMessage("Please tape more than 3 characters");
     } else {
       setMessage(null);
-      setTitle(e.target.value);
+      // setTitle(e.target.value);
     }
   };
 
+  //! function to get the price from input
   const priceInput = (e) => {
-    setPrice(e.target.value);
+    // setPrice(e.target.value);
   };
-
 
   //! submit a new product
   const submitForm = (e) => {
@@ -47,21 +40,21 @@ const {products , addProduct } = useContext(ProductContext)
 
     let myProduct = {
       id: uuid(),
-      label: title,
-      price,
+      label: title.current.value,
+      price: price.current.value,
     };
+    console.log(myProduct)
+    addProduct(myProduct);
+    label: title.current.value=""
+    price: price.current.value=0
 
-    addProduct(myProduct)
-
-    setTitle("");
-    setPrice(0);
+    // setTitle("");
+    // setPrice(0);
   };
-
- 
 
   return (
     <div>
-      <h1>{title}</h1>
+      {/* <h1>{title}</h1> */}
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maxime
         similique eaque nihil velit,
@@ -69,9 +62,13 @@ const {products , addProduct } = useContext(ProductContext)
 
       <form onSubmit={submitForm}>
         <div className="form-group my-2">
-          <label htmlFor="" className="form-label"></label>
+          <label htmlFor="title" className="form-label">
+            Title
+          </label>
           <input
-            defaultValue={title}
+            id="title"
+            // defaultValue={title}
+            ref={title}
             onChange={titleInput}
             type="text"
             className="form-control"
@@ -81,9 +78,13 @@ const {products , addProduct } = useContext(ProductContext)
         </div>
 
         <div className="form-group my-2">
-          <label htmlFor="" className="form-label"></label>
+          <label htmlFor="price" className="form-label">
+            Price
+          </label>
           <input
-            defaultValue={price}
+            id="price"
+            // defaultValue={price}
+            ref={price}
             onChange={priceInput}
             type="number"
             className="form-control"
