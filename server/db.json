@@ -1,19 +1,129 @@
 {
   "articles": [
     {
-      "title": "Python",
-      "description": "learn how to create NextJS app",
-      "id": 3
-    },
-    {
       "title": "React",
       "description": "learn how to create NextJS app",
       "id": 4
     },
     {
-      "title": "Angular",
+      "title": "React",
       "description": "learn how to create NextJS app",
       "id": 5
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 6
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 7
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 8
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 9
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 10
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 11
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 12
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 13
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 14
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 15
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 16
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 17
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 18
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 19
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 20
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 21
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 22
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 23
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 24
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 25
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 26
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 27
+    },
+    {
+      "title": "React",
+      "description": "learn how to create NextJS app",
+      "id": 28
     }
   ]
 }
